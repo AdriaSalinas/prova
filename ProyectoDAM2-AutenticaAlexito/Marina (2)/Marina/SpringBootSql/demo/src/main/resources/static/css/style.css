@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0A0E27, #8E44AD);
+    color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #8E44AD;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    /* Tamaño pequeño del logo */
+    height: auto;
+}
+
+.login-btn {
+    background-color: #F1C40F;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #FF69B4;
+    color: #FFFFFF;
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 250px;
+    flex-grow: 1;
+    background-size: cover;
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.signup-btn {
+    background-color: #F1C40F;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #FF69B4;
+    color: #FFFFFF;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #F1C40F;
+}
+
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.auth-button {
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: 100%;
+    color: #fff;
+    background-color: #4285F4;
+    /* Google Color */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.auth-button img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.facebook-button {
+    background-color: #3b5998;
+}
+
+.instagram-button {
+    background-color: #e1306c;
+}
+
+.app-download {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.app-download img {
+    width: 120px;
+    max-width: 120px;
+    height: auto;
+}
+
+.app-store-logo {
+    width: 80px;
+    /* Ajusta el tamaño de la imagen de App Store */
+}
+
+.google-play-logo {
+    width: 150px;
+    /* Ajusta el tamaño de la imagen de Google Play */
+}
+
+.modal p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Menú desplegable */
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    /* Asegura que el menú desplegable se posicione correctamente */
+    align-items: center;
+    /* Asegura que todos los elementos del menú estén alineados verticalmente */
+}
+
+.horoscope-container {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    /* Ocultar el desplegable por defecto */
+    position: absolute;
+    background-color: #8E44AD;
+    padding: 10px;
+    border-radius: 5px;
+    top: 150%;
+    /* Posiciona el desplegable justo debajo del enlace "Horóscopo" */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+.horoscope-container:hover .dropdown {
+    display: block;
+    /* Mostrar el menú cuando el mouse está sobre la sección de "Horóscopo" */
+}
+
+.dropdown a {
+    display: block;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown a:hover {
+    background-color: #F1C40F;
+    color: black;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    padding: 10px 0;
+    /* Ajusta el padding vertical para igualarlo */
+}
+
+.menu a:hover {
+    background-color: #F1C40F;
+    color: black;
+}
+
+
+/* Descripción del horóscopo */
+
+.horoscope-description {
+    margin: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    display: none;
+    /* Oculto por defecto */
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo Tauro</title>
+    <link rel="stylesheet" href="css/estiloTauro.css">
+    
+</head>
+<body>
+
+    <!-- Encabezado grande para Aries -->
+    <h1>Horóscopo de Tauro</h1>
+
+    <!-- Texto descriptivo -->
+    <p>
+        Si has nacido entre el 20 de abril y el 20 de mayo, eres Tauro. Regida por Venus, te gusta detenerte y apreciar la belleza de la vida, y probablemente también seas una gran romántica.
+
+        Aunque tengas fama de lenta y a veces incluso de perezosa, esto es solo porque necesitas más tiempo para decidirte. Eres fiel a tu palabra, y si dices que vas a hacer algo, nunca decepcionas.    </p>
+    <p>
+        Tauro, al igual que Capricornio y Virgo, es un signo zodiacal de tierra. ¿Y esto qué quiere decir? te preguntarás. Pues los signos zodiacales también se agrupan en cuatro grupos que corresponden a los elementos de la naturaleza: aire, tierra, agua y fuego y estas distinciones definen rasgos psicológicos del comportamiento humano y cómo se relacionan con la realidad.
+    </p>
+    <p>
+        En el caso de las personas nacidas bajo el signo Tauro y que forman parte del elemento tierra, se les puede describir como seres que están muy en sintonía con el reino de lo material, con los pies bien enraizados en el suelo, con lo cual suelen ser estables, confiables y a veces reacios a las supersticiones y los horóscopos. Cultivan la paciencia y creen en el paso a paso de los procesos. Trabajan duro por sus objetivos, pero esto no significa que trabajen de más. Sin prisa pero sin pausa. La certeza les da paz y, por eso, la incertidumbre los amenaza, esto hace que tiendan al control excesivo.
+    </p>
+    <p>
+        Cómo son las personas del signo Tauro?
+        Las personas del signo Tauro toman su tiempo a la hora de decidir y les gusta sopesar cuidadosamente tus opciones antes de comprometerte con algo. Son también conocidos como el signo más terco del zodíaco, pero también uno de los más fieles y consistentes en su forma de pensar. Esto se debe a que, una vez que han tomado una decisión, lo hacen a largo plazo. Si eres Tauro puedes dar la impresión de ser un poco indecisa, pero en realidad lo que quieres es estar muy segura de que lo que vas a hacer merece la pena.
+
+    </p>
+    <p>
+        Si eres del signo Tauro también te gustan las aficiones tranquilas y relajantes, y no eres de las que se mueven muy deprisa. Es posible que otras personas te critiquen por ser demasiado perezosa o lenta, pero a ti te gusta ir a tu propio ritmo. También es probable que prefieras las actividades prácticas en las que participen tus cinco sentidos, como hacer manualidades, pasear por la naturaleza o construir cosas. A continuación, 10 cosas que definen la personalidad de los Tauro:
+
+        A los Tauros les encanta tener los pies sobre la tierra, por lo que la palabra ‘terrenal’ les sienta bien
+        Su paciencia es grande, pero tiene un límite
+        Les cuesta darse cuenta de cuanto el tiempo pasó y en su búsqueda por estabilidad podrían estancarse
+        Son leales, si estás entre sus amigos considérate privilegiado.
+        Tercos, son muy tercos. ¿Ya dijimos tercos?
+        Hedonistas, regidos por Venus, solo buscan lo más bello y lo que les genera placer.
+        No son románticos per se, pero saben como conquistar y encantar a su interés
+        Materialistas. En ocasiones conectar con su lado espiritual es complicado, cuando solo piensan en hacer y tener.
+        Saben comer. ¿Necesitas saber cuál es el mejor restaurante de la ciudad? Solo pregúntales.
+        Siempre los verás bien vestidos. El lujo y el minimalismo son parte de su ADN.
+    </p>
+        <!-- Contenedor para el desplegable y botones -->
+    <div class="container">
+        <label for="selectCategory">Elige una opción:</label>
+        <select id="selectCategory">
+            <option value="none">Seleccionar</option>
+            <option value="man">Tauro Hombre</option>
+            <option value="women">Tauro Mujer</option>
+        </select>
+
+        <button class="btn" onclick="showInfo()">Mostrar</button>
+    </div>
+
+    <!-- Enlace para volver a la página de inicio -->
+    <a href="/inicio">Volver al inicio</a>
+
+    <!-- Script para manejar el desplegable y abrir nuevas ventanas -->
+    <script>
+        function showInfo() {
+            const category = document.getElementById("selectCategory").value;
+
+            if (category === "man") {
+                // Abre una nueva ventana con las cosas buenas de Aries
+                let newWindow = window.open("", "Hombre Tauro", "width=400,height=400");
+
+// Escribimos el contenido HTML dentro de la nueva ventana
+newWindow.document.write(`
+    <html>
+        <head>
+            <title>Hombre Tauro</title>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: Arial, sans-serif;
+                    color: white;
+                    background-image: url('https://c4.wallpaperflare.com/wallpaper/765/542/447/edward-cullen-twilight-wallpaper-preview.jpg'); /* Cambia esta URL por tu imagen de fondo */
+                    background-size: cover;
+                    background-position: center;
+                    text-align: center;
+                    padding: 20px;
+                }
+
+                h2 {
+                    color: #FFD700; /* Un color dorado para el título */
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 18px;
+                    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Características Hombres Tauro</h2>
+            <p>Lo básico sobre los Aries
+Cumpleaños: del 20 de abril al 20 de mayo
+Modalidad: signo fijo
+Elemento: signo de tierra
+Planeta gobernante: Venus (el planeta del amor, ojo)
+Representado por: el toro
+Palabras clave: Seguro, relajado, pragmático, sensual, romántico, leal, testarudo, fiable, práctico, trabajador, buen gusto
+Himno del amor: “Drunk in Love,” by Beyoncé
+Hombres famosos Tauro: Noah Centineo, Travis Scott, Rami Malek, George Clooney, Robert Pattinson, David Beckham, Stephen Colbert, Dwayne "The Rock" Johnson, Henry Cavill, Joe Keery, John Cena, Channing Tatum, Meek Mill, Enrique Iglesias, Kenan Thompson, etc.</p>
+<p>
+    Así es el sexo con un Tauro
+Como signo de tierra, Tauro es todo sensualidad. Piensa en velas y muchos juegos preliminares. Son conocidos por su resistencia, así que prepárate para un segundo, tercer o cuarto asalto.
+
+Los Tauro son notoriamente románticos, así que adelante, pon esa música ambiental y cubre tu dormitorio con pétalos de rosa. También aprecian el arte, es decir, no te olvides de tu mejor lencería y tus fotos de desnudos más sensuales.
+
+Como uno de los signos más asociados a la estabilidad y la seguridad, Tauro no siente la necesidad de probar todas las posturas sexuales del Kamasutra. Es probable que tengan unas pocas favoritas que les encanta hacer una y otra vez... y son muy buenos en ellas. Esto no quiere decir que tu chico Tauro sea de mente cerrada, pero si quieres probar algo nuevo en la cama, probablemente tendrás que ser tú quien lo proponga.
+</p>
+<p>
+   La cita perfecta con un hombre Tauro
+Planea tu cita para desarrollar los sentidos. Lleva a tu Tauro a una deliciosa cena en un restaurante conocido, o cocina tú misma (pero solo si se te da bien cocinar, si no, busca en Google un sitio con excelentes críticas). O bien, enamórale en una galería de arte o en un museo, mejor aún si tienen un buen vino para beber mientras disfrutáis de los cuadros. Conciertos, bares de cócteles, masajes de cuerpo entero... si eso deleita sus ojos, sus oídos, sus papilas gustativas, etc. se enamorará de ti.
+</p>
+<p>
+    Un hombre Tauro en casa
+Junto con Cáncer, Tauro es la persona más hogareña del zodiaco, así que ten seguro que sus cojines en el sofá son los más cómodos, las sábanas más suaves que jamás probado, las almohadas más mullidas en las que hayas dormido y un sofá tan perfecto que podrías sentarte allí durante días. No esperes ningún centro de mesa exagerado: un Tauro valora la practicidad por encima de todo. Piensa en "bonito y acogedor", no en "sacado de una revista de interiorismo". Ah, y sus utensilios de cocina probablemente estén tremendamente limpios y a punto para deleitaros culinariamente.
+</p>
+<p>
+  Un hombre Tauro en el trabajo
+Un Tauro es el compañero de trabajo más fiable que puedas tener. Son trabajadores y dicen las cosas como son. Es más probable que asuman un papel entre bastidores que uno que requiera hablar mucho en público o aparecer en los medios de comunicación... pero no me malinterpretes, toda la empresa se desmoronaría sin su ética de trabajo y su brillante mente. Son excelentes a la hora de mantener el equilibrio en tiempos de crisis, y siempre saben cuál es el mejor lugar para ir a comer con la tarjeta de la empresa. La única pega: su famosa terquedad. Si trabajas con un Tauro, ¡cuidado con llevarle la contraria!
+</p>
+<p>
+  Un hombre Tauro con sus amigos
+Como signo de tierra, los Tauro tienden a tener un círculo cercano de amigos de confianza más que una lista completa de gente conocida. Son muy leales, por lo que es posible que tengan amigos a los que conocen de toda la vida (y tienen esas típicas y adorables fotos de la guardería para demostrarlo, así que asegúrate de pedirle que quieres verlas). Los Tauro no suelen hacer nuevos amigos con facilidad, pero una vez que has entrado en el círculo íntimo de un Tauro, te quedas para toda la vida (siempre que no te enfrentes a ellos).
+
+</p>
+<p>
+    El mejor regalo para un hombre Tauro
+¿Estás buscando un regalo de aniversario o de cumpleaños para tu chico Tauro? Piénsalo bien. Los Tauro aprecian "las cosas buenas de la vida", y hay gente que piensa que son materialistas. Lo cierto es que, aunque están regidos por Venus, no es necesario que gastes todo tu sueldo en su regalo de cumpleaños. Sólo tienes que pensar en lo que les compras. Los Tauro son de los que aprecian algo pequeño pero de alta calidad en lugar de un regalo llamativo y listo para Instagram. Elige una sola vela de lujo en lugar de una bolsa de regalo llena de baratijas. Omite los llamativos globos dorados para el día de San Valentín y escribe una nota sincera en una tarjeta. Éxito asegurado.
+</p>
+   
+</body>
+    </html>
+`);
+newWindow.document.close(); // Cierra el flujo de escritura para que el navegador renderice el contenido
+
+            } else if (category === "women") {
+                let newWindow2 = window.open("", "Mujer  Tauro", "width=400,height=400");
+
+                // Escribimos el contenido HTML dentro de la nueva ventana
+                newWindow2.document.write(`
+                    <html>
+                        <head>
+                            <title>Mujer Tauro</title>
+                            <style>
+                                body {
+
+                                    margin: 0;
+                                    padding: 0;
+                                    font-family: Arial, sans-serif;
+                                    color: white;
+                                    background-image: url(https://image.europafm.com/clipping/cmsimages01/2024/01/12/1FF503BF-6B93-4465-BBBB-023F055ECF2E/lola-indigo_97.jpg?crop=1920,1080,x0,y101&width=1600&height=900&optimize=low&format=webply); /* Cambia esta URL por tu imagen de fondo */
+                                    background-size: cover;
+                                    background-position: center;
+                                    text-align: center;
+                                    padding: 20px;
+
+                                }
+                
+                                h2 {
+                                    color: #FFD700; /* Un color dorado para el título */
+                                    font-size: 24px;
+                                    margin-bottom: 10px;
+                                }
+                
+                                p {
+                                    font-size: 18px;
+                                    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+                                    padding: 10px;
+                                    border-radius: 10px;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <h2>Características Mujer Tauro</h2>
+                            <p>La mujer Aries, un enigma irresistible que despierta curiosidad y admiración. Detrás de su mirada llena de determinación y su actitud apasionada, se esconden los secretos de una personalidad fascinante. Desde su energía desbordante hasta su valentía intrépida, la mujer Aries cautiva con su magnetismo único. En este artículo, exploraremos los misterios y rasgos distintivos que hacen de ella un ser excepcional. Prepárate para descubrir los secretos ocultos tras el fuego y la pasión de la mujer nacida bajo el signo de Aries. Estos son los secretos de la mujer Aries.</p>
+                <p>
+                    Es decidida y valiente
+                    La mujer Aries es la Lara Croft del Zodiaco. Ama la adrenalina y es adicta a la aventura. No teme enfrentarse a desafíos y está dispuesta a tomar riesgos para lograr lo que desea. Su espíritu intrépido la impulsa a perseguir sus metas con determinación.
+
+                    La valentía es una de las características más destacadas de la mujer Aries. No teme enfrentar desafíos y está dispuesta a correr riesgos para alcanzar lo que desea. La palabra miedo no está en su vocabulario. Su coraje la impulsa a aventurarse en nuevos territorios sin dudarlo.
+                </p>
+                <p>
+                  2. Su energía no se apaga, y la pasión menos
+                    La mujer Aries tiene una energía desbordante y un entusiasmo contagioso. Siempre está buscando nuevas aventuras y experiencias emocionantes. Su vitalidad la convierte en un ser extremadamente magnético y atractivo.
+                </p>
+                <p>
+                   Su pasión por la vida es irresistible y encanta a cualquier que la escucha hablar o que la ve actuar. Es decidida, lo que la impulsa a perseguir sus metas con determinación. Enfocada en su vida, la mujer Aries tiene un camino claro trazado para sí misma.
+
+                </p>
+                <p>
+                   Es independiente y una líder nata
+                    La mujer Aries valora su independencia y libertad. Es autosuficiente y disfruta asumiendo retos por su cuenta. A menudo busca la autonomía en diferentes aspectos de su vida. No te intimides por ello. 
+
+                    Le gusta tomar las riendas de su vida, así que no te interpongas en su camino. Es una líder natural y está dispuesta a asumir la responsabilidad en diversas situaciones. Le gusta tomar decisiones y confía en su propio juicio. Es tan capaz de inspirar a otros y guiarlos hacia el éxito.
+                </p>
+                <p>
+                  Arrasa con su franqueza y honestidad 
+                  Una mujer Aries tiende a ser directa y sincera. No suele rodear los problemas y puede expresar sus opiniones sin adornos. Esta sinceridad puede ser refrescante, pero también puede resultar abrumadora para aquellos que prefieren mensajes más sutiles.
+                 No tiene ni cinco de miedo de decir lo que piensa y es muy capaz expresar sus opiniones con franqueza. A veces, esta honestidad puede parecer demasiado intensa para los demás, pero una Aries prefiere la transparencia y la autenticidad. Dado que siempre es sincera con su comunicación y sentimientos, espera lo mismo de su gente y no le va bien en el juego de persecución.
+
+                Si no estás en disposición de escuchar la verdad, mejor ni le preguntes a una mujer Aries.
+
+
+                </p>
+                <p>
+                    Es cierto, es impaciente y competitiva 
+                    La mujer Aries puede ser impaciente y tener una fuerte necesidad de éxito. Le gusta ver resultados rápidos y puede frustrarse si las cosas no avanzan a su ritmo. Se irrita fácilmente con cualquier cosa lenta, ya sean computadoras, teléfonos, Internet o incluso personas. La impaciencia puede ser uno de los mayores desafíos para ella. Aprender a tener paciencia puede ser un aspecto importante de su crecimiento personal. Pero eso no importa, es lo que le inyecta vida.
+
+                   Además, tiene un espíritu competitivo porque ama destacar en todo lo que hace. Es que no lo puede evitar, ella adora los desafíos. Ya sea en el trabajo, el romance, los deportes o cualquier otra actividad, se esforzará por ser la mejor. Ella ve la vida como una constante carrera y se esfuerza por superarse a sí misma y a los demás. 
+                </p>
+                <p>
+                    Es perfeccionista
+                    La mujer Aries valora la organización y se siente más cómoda cuando las cosas siguen su curso previsto. Puede experimentar frustración si las circunstancias se desvían de su plan cuidadosamente trazado. 
+                    Si alguien no cumple una tarea que le ha asignado o falla a un compromiso, es posible que se sienta molesta. Sin embargo, su enfoque directo y valiente le impide guardar silencio. Ella prefiere enfrentar la situación cara a cara, porque esa es su naturaleza: audaz y no tiene miedo. Es importante destacar que sus intenciones siempre son puras, ya que su objetivo principal es ayudar a las personas a evitar errores y alcanzar su máximo potencial.
+
+                    Ella no quiere ofender, solo desea sacar lo mejor de los demás.    
+                   
+                </p>
+                <p>
+                    Posee una sensibilidad oculta
+                   Detrás de su aparente fortaleza y valentía, la mujer Aries guarda una sensibilidad oculta que puede sorprender a quienes la rodean. A pesar de su actitud segura y decidida, las críticas o el rechazo pueden afectarla profundamente. A veces, las palabras ofensivas o los gestos de desaprobación pueden herirla más de lo que deja entrever. 
+
+                  Esta sensibilidad oculta se debe en parte a su naturaleza apasionada y comprometida. La mujer Aries se entrega por completo en todo lo que hace, y cuando sus esfuerzos no son reconocidos o son menospreciados, puede sentirse desanimada. Incluso una pequeña crítica puede resonar en su interior y afectar su confianza en sí misma.
+                </p>
+                <p>
+                    Es conocida por su lealtad inquebrantable e instinto protector
+                    Cuando se compromete con alguien o con una causa, lo hace con todo su corazón y se convierte en una defensora feroz. Su lealtad se extiende a sus seres queridos, amigos y aquellos a quienes considera parte de su círculo íntimo.
+                    Cuando se trata de proteger a las personas que ama, la mujer Aries no escatima esfuerzos. Estará dispuesta a enfrentarse a cualquier obstáculo o peligro con tal de asegurarse de que aquellos a quienes valora estén a salvo. Su naturaleza valiente y audaz la impulsa a asumir el papel de guardiana y defensora de los que considera importantes en su vida.
+
+                    Además de su lealtad hacia las personas, la mujer Aries también puede ser protectora en cuanto a sus ideales y principios. Defiende con pasión lo que cree correcto y puede levantar su voz en contra de la injusticia. Su sentido de justicia y su deseo de proteger a los vulnerables la convierten en una aliada valiosa en la lucha por la equidad y la igualdad.
+                </p>   
+                <p>
+                     La que persevera, alcanza
+La perseverancia es una de las cualidades más destacadas de una mujer Aries. Una vez que se ha propuesto alcanzar una meta, no se detendrá ante nada hasta lograrlo. Su determinación inquebrantable y su enfoque infatigable la convierten en una fuerza imparable.
+
+Cuando la mujer Aries se enfrenta a desafíos o contratiempos, en lugar de rendirse, se fortalece. Su naturaleza impulsiva y valiente le permite enfrentar los obstáculos con coraje y buscar soluciones creativas. No se desanima fácilmente y, en lugar de eso, ve cada obstáculo como una oportunidad para crecer y aprender.
+
+Y por si fuera poco, la mujer Aries posee una gran resistencia emocional. Puede enfrentar adversidades y superar desafíos con resiliencia. Su capacidad para mantenerse firme en tiempos difíciles inspira y demuestra que no hay límites para los sueños.
+</p>
+<p>
+    Aprecia la calidad sobre cantidad
+A la mujer Aries la caracteriza su enfoque selectivo y búsqueda de la excelencia en todas las áreas de su vida. Ella valora la calidad y la autenticidad por encima de la mera cantidad o superficialidad. En lugar de buscar el camino más fácil o superficial, ella prefiere tomar decisiones sólidas y fundamentadas que lleven a resultados más significativos y satisfactorios
+
+En sus relaciones personales, la mujer Aries prefiere tener un círculo cercano de amistades íntimas y significativas en lugar de numerosas relaciones superficiales. Invierte tiempo y energía en construir conexiones genuinas y duraderas con las personas que comparten sus mismos valores.
+
+En el trabajo, puesto que la mujer Aries se esfuerza por destacar en su campo y busca oportunidades que le permitan ejercer su liderazgo y habilidades, prefiere enfocarse en proyectos de calidad, donde pueda dejar una marca significativa, en lugar de dispersarse en múltiples tareas de menor importancia.
+
+Su naturaleza reflexiva y analítica le permite evaluar cuidadosamente las opciones y elegir aquellas que realmente se alineen con sus valores y metas.
+En este fascinante recorrido por los secretos de la mujer Aries, podemos afirmar que detrás de su energía ardiente y su valentía innegable, se esconde una combinación única de pasión, lealtad y perseverancia. Esta mujer excepcional nos enseña que la fortaleza no se limita a la apariencia externa, sino que también reside en la sensibilidad y en la capacidad de amar y proteger a aquellos que son importantes para ella. Al descubrir los secretos ocultos tras el fuego que arde en su corazón, nos maravillamos ante la mujer Aries y nos inspiramos en su determinación inquebrantable para conquistar el mundo. En cada paso que da, la mujer Aries encarna el espíritu indomable que todos llevamos dentro, recordándonos que cuando nos atrevemos a abrazar nuestra autenticidad y perseguir nuestras pasiones con valentía, somos capaces de lograr grandes cosas. Así que, abracemos la esencia de la mujer Aries y dejémonos llevar por su fuego arrollador mientras trascendemos los límites y conquistamos nuestros propios sueños.
+</p>
+
+                </body>
+                    </html>
+                `);
+                newWindow2.document.close(); // Cierra el flujo de escritura para que el navegador renderice el contenido
+            } else {
+                alert("Por favor selecciona una categoría.");
+            }
+        }
+    </script>
+
+</body>
+</html>

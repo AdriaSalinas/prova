@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo Aries</title>
+    <link rel="stylesheet" href="css/estiloAries.css">
+    
+</head>
+<body>
+
+    <!-- Encabezado grande para Aries -->
+    <h1>Horóscopo de Aries</h1>
+
+    <!-- Texto descriptivo -->
+    <p>
+        Si has nacido entre el 21 de marzo y el 20 de abril, efectivamente, eres Aries. El primer signo del Zodíaco, un signo masculino, cardinal y de fuego regido por el planeta Marte. Estás en oposición directa con Libra y recibes tu nombre de la constelación Aries (el carnero). ¿Quieres saber quién es Aries? Reconocerte no es difícil. Tienes una energía incansable y eres muy amistoso. Muestras confianza en los demás en seguida y casi siempre estás sonriendo. Aparentemente, no hay problemas en tu vida. Eres de esas personas que necesitan hacerse notar, lo sabes y los demás, también.
+    </p>
+    <p>
+        Es divertido tenerte cerca porque tus conversaciones no son aburridas y siempre estás aportando cosas nuevas al grupo. Algo muy característico de ti es que luchas siempre ante cualquier tipo de injusticia. Es propio de cualquier Aries. Jamás te avergüenzas de expresar lo que sientes y lo que piensas. Da igual que estés frente al mayor capo de la mafia o frente al frutero de la esquina. Responderás de la misma manera si algo no te parece bien. En muchas ocasiones acabas arrepintiéndote, pero tus impulsos van siempre primero en tu vida, se nota demasiado que eres un signo de fuego. Tu planeta Marte es el que se encarga de que seas así de arrebatado.
+
+       Eres el primer signo del zodiaco y representas el nacimiento, el origen, el comienzo. Un niño en cuerpo de adulto, pero al fin y al cabo un niño. Te encanta jugar con fuego, arriesgar y llevar al límite las cosas. Eres intrépido y hasta que no te quemas no aprendes las lecciones y, cuando la cicatriz ha sanado, vuelves otra vez a la carga.
+    </p>
+    <p>
+        Cuando quieres algo, lo quieres ya, inmediatamente, y lo buscas, y si no, lo pides. O lo exiges. A veces puedes ser un poco egoísta porque no te das cuenta de que otros pueden tener asuntos más importantes en su vida que complacerte en el momento de tu antojo. Pero como buen Aries que eres, tienes que intentarlo siempre.
+
+        No eres mentiroso, no porque no quieras serlo de vez en cuando, si no porque no puedes. Si te conocen un poco, sabrán que tu expresión te delata al más mínimo embuste que quieras soltar. Quizás intentes formular una mentira pequeña, y te crean, pero si empiezas a alargarte te acaban pillando siempre.
+    </p>
+    <p>
+        En el fondo eres delicado y vulnerable, y te afectan mucho las cosas. Cuando otras personas intentan imponerse a ti o causarte algún tipo de daño te defiendes de la única manera que sabes hacerlo, gritando y pataleando hasta que el otro cede y acaba dándose por vencido. Aunque sólo sea por tener paz y tranquilidad. Te sales con la tuya montando un show siempre. Y lo sabes.
+        También en tu vida hay decepciones, claro que si, pero no te muestras débil ante nadie. Nunca. Prefieres no sacar tus decepciones a la luz y cuando lloras delante de alguien es porque lo que ha pasado te ha roto el alma. Y no puedes aguantar más.
+
+    </p>
+    <p>
+        Te distraes con demasiada frecuencia. Pueden hablarte y de repente tu mirada se pierde en algo más interesante y te olvidas de todo lo que te estaban diciendo. No lo haces a maldad ni por ser mal educado, sólo es algo típico de ti, no hay que tenerlo en cuenta ni enfadarse por ello.
+        Normalmente estarás siempre en los primeros puestos de lo que decidas hacer. Tu pasión por llegar el primero y ganar es lo que hace que te mantengas siempre en lo alto. Aunque eres muy impaciente y a veces dejes de lado los proyectos que empiezas cuando no ves resultados rápidos.    
+    </p>
+        <!-- Contenedor para el desplegable y botones -->
+    <div class="container">
+        <label for="selectCategory">Elige una opción:</label>
+        <select id="selectCategory">
+            <option value="none">Seleccionar</option>
+            <option value="man">Aries Hombre</option>
+            <option value="women">Aries Mujer</option>
+        </select>
+
+        <button class="btn" onclick="showInfo()">Mostrar</button>
+    </div>
+
+    <!-- Enlace para volver a la página de inicio -->
+    <a href="/inicio">Volver al inicio</a>
+
+    <!-- Script para manejar el desplegable y abrir nuevas ventanas -->
+    <script>
+        function showInfo() {
+            const category = document.getElementById("selectCategory").value;
+
+            if (category === "man") {
+                // Abre una nueva ventana con las cosas buenas de Aries
+                let newWindow = window.open("", "Hombre Aries", "width=400,height=400");
+
+// Escribimos el contenido HTML dentro de la nueva ventana
+newWindow.document.write(`
+    <html>
+        <head>
+            <title>Hombre Aries</title>
+            <style>
+                body {
+                    margin: 0;
+                    padding: 0;
+                    font-family: Arial, sans-serif;
+                    color: white;
+                    background-image: url('https://fotografias.larazon.es/clipping/cmsimages01/2019/11/27/18DF416F-ED25-4BBF-8524-72F4E5BCD622/97.jpg?crop=1920,1080,x0,y100&width=1600&height=900&optimize=low&format=webply'); /* Cambia esta URL por tu imagen de fondo */
+                    background-size: cover;
+                    background-position: center;
+                    text-align: center;
+                    padding: 20px;
+                }
+
+                h2 {
+                    color: #FFD700; /* Un color dorado para el título */
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 18px;
+                    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+            </style>
+        </head>
+        <body>
+            <h2>Características Hombres Aries</h2>
+            <p>Lo básico sobre los Aries
+Cumpleaños: Del 21 de marzo al 19 de abril.
+Modalidad: Cardinal.
+Elemento: Fuego.
+Planeta regente: Marte.
+Representado por: El carnero.
+Palabras clave: Audaz, ambicioso, salvaje, excitante, enérgico, competitivo, curioso, impulsado, apasionado, juguetón, asertivo, competitivo, extra.
+Canción de amor: “Love Game", de Lady Gaga.
+Hombres famosos Aries: Lil Nas X, Paul Rudd, Chance the Rapper, David Oyelowo, Ewan McGregor, Michael Fassbender, Pharrell Williams, Conan O’Brien, Eddie Murphy, Seth Rogen, Hayden Christensen, Robert Downey Jr., Big Sean.</p>
+<p>
+    El sexo con un chico Aries
+Como signo de fuego, Aries es APASIONADO. No tiene ningún problema en tomar la iniciativa en el dormitorio, e incluso puede divertirse con un poco de juego de poder (después de todo, tiene un lado mandón). De hecho, Aries casi siempre está dispuesto a experimentar en el la cama. Son curiosos por naturaleza, y para ellos el sexo debe ser divertido por encima de todo. Siempre están sugiriendo nuevas posturas, juguetes y escenarios sexuales. Su vida sexual no tiene nada de aburrida. Como Sonic, aquel divertido personaje de videojuegos, Aries tiene que ir rápido, lo que significa que son expertos en rapiditos.
+</p>
+<p>
+    La cita perfecta con un chico Aries
+Los Aries son activos por naturaleza. Lo que no significa que tengas que llevarles al gimnasio en la primera cita (aunque, en realidad, podrían estar dispuestos a ello). Sólo significa que "Netflix, mantita y tranquilidad" es un plan aburrido para ellos. Quieren hacer cosas. Puede ser cualquier cosa, desde ir a un bar nuevo hasta asistir a una clase de baile juntos o hacer paracaidismo. Le encanta hacer cosas nuevas. Así que adelante, empieza una lista en la aplicación Notas de tu smartphone con todas las ideas divertidas que se te ocurran, porque tu chico Aries no quiere hacer lo mismo dos veces.
+</p>
+<p>
+    Un hombre Aries en casa
+Aries es de los que no permanecen mucho tiempo en un mismo sitio. Para ellos, su casa es simplemente un lugar donde dormir antes de salir. Por eso quieren que su casa sea cómoda, acogedora y desordenada. La única excepción: Puede que veas pruebas de las aficiones de Aries, aunque las hayan abandonado. ¿Esa clase de coctelería a la que asistieron? ¿Se apuntó a un equipo de hockey? Sí, es posible que veas un casco o una coctelera por ahí, porque Aries tiene mejores cosas que hacer con su fin de semana que ocuparse de su caja de "cosas para regalar".
+</p>
+<p>
+    Un hombre Aries en el trabajo
+A Aries se le ocurren ideas brillantes para proyectos... pero puede que necesite un poco de ayuda para llevarlos a cabo. Son conocidos por sus ideas creativas y su espíritu emprendedor, y también son simplemente DIVERTIDOS. Son los que se disfrazan para Halloween, aunque nadie más lo haga. Los Aries también son mandones por naturaleza, así que si aún no son jefes, actúan como si lo fueran... o quizá prefieran trabajar por cuenta propia para no tener que rendir cuentas a nadie.
+</p>
+<p>
+    Un chico Aries con sus amigos
+La naturaleza extrovertida de Aries le convierte en una persona muy popular. Sus amigos se inspiran con la cantidad de cosas que hacen cada semana, así que a Aries nunca le faltará un acompañante. Quiere mandar y, como signo de fuego que es, es exaltado por naturaleza.
+
+</p>
+<p>
+    El regalo ideal para un Aries
+Para ser sinceros, es difícil elegir un regalo que a Aries no le guste. Son juguetones, curiosos y les encanta probar cosas nuevas, así que la única forma de equivocarse es comprarles algo que ya te hayan dicho que odian (quizás puede incluso que piensen que es gracioso). Tanto si se trata de un accesorio llamativo como de un pack de salsas picantes, Aries es todo audacia. No dejes de considerar la posibilidad de regalar una "experiencia" en lugar de algo físico, como un pase para todo el día al parque de atracciones o entradas para su concierto favorito.
+</p>
+   
+</body>
+    </html>
+`);
+newWindow.document.close(); // Cierra el flujo de escritura para que el navegador renderice el contenido
+
+            } else if (category === "women") {
+                let newWindow2 = window.open("", "Mujer  Aries", "width=400,height=400");
+
+                // Escribimos el contenido HTML dentro de la nueva ventana
+                newWindow2.document.write(`
+                    <html>
+                        <head>
+                            <title>Mujer Aries</title>
+                            <style>
+                                body {
+
+                                    margin: 0;
+                                    padding: 0;
+                                    font-family: Arial, sans-serif;
+                                    color: white;
+                                    background-image: url(https://image.europafm.com/clipping/cmsimages01/2024/01/12/1FF503BF-6B93-4465-BBBB-023F055ECF2E/lola-indigo_97.jpg?crop=1920,1080,x0,y101&width=1600&height=900&optimize=low&format=webply); /* Cambia esta URL por tu imagen de fondo */
+                                    background-size: cover;
+                                    background-position: center;
+                                    text-align: center;
+                                    padding: 20px;
+
+                                }
+                
+                                h2 {
+                                    color: #FFD700; /* Un color dorado para el título */
+                                    font-size: 24px;
+                                    margin-bottom: 10px;
+                                }
+                
+                                p {
+                                    font-size: 18px;
+                                    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+                                    padding: 10px;
+                                    border-radius: 10px;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <h2>Características Mujer Aries</h2>
+                            <p>La mujer Aries, un enigma irresistible que despierta curiosidad y admiración. Detrás de su mirada llena de determinación y su actitud apasionada, se esconden los secretos de una personalidad fascinante. Desde su energía desbordante hasta su valentía intrépida, la mujer Aries cautiva con su magnetismo único. En este artículo, exploraremos los misterios y rasgos distintivos que hacen de ella un ser excepcional. Prepárate para descubrir los secretos ocultos tras el fuego y la pasión de la mujer nacida bajo el signo de Aries. Estos son los secretos de la mujer Aries.</p>
+                <p>
+                    Es decidida y valiente
+                    La mujer Aries es la Lara Croft del Zodiaco. Ama la adrenalina y es adicta a la aventura. No teme enfrentarse a desafíos y está dispuesta a tomar riesgos para lograr lo que desea. Su espíritu intrépido la impulsa a perseguir sus metas con determinación.
+
+                    La valentía es una de las características más destacadas de la mujer Aries. No teme enfrentar desafíos y está dispuesta a correr riesgos para alcanzar lo que desea. La palabra miedo no está en su vocabulario. Su coraje la impulsa a aventurarse en nuevos territorios sin dudarlo.
+                </p>
+                <p>
+                  2. Su energía no se apaga, y la pasión menos
+                    La mujer Aries tiene una energía desbordante y un entusiasmo contagioso. Siempre está buscando nuevas aventuras y experiencias emocionantes. Su vitalidad la convierte en un ser extremadamente magnético y atractivo.
+                </p>
+                <p>
+                   Su pasión por la vida es irresistible y encanta a cualquier que la escucha hablar o que la ve actuar. Es decidida, lo que la impulsa a perseguir sus metas con determinación. Enfocada en su vida, la mujer Aries tiene un camino claro trazado para sí misma.
+
+                </p>
+                <p>
+                   Es independiente y una líder nata
+                    La mujer Aries valora su independencia y libertad. Es autosuficiente y disfruta asumiendo retos por su cuenta. A menudo busca la autonomía en diferentes aspectos de su vida. No te intimides por ello. 
+
+                    Le gusta tomar las riendas de su vida, así que no te interpongas en su camino. Es una líder natural y está dispuesta a asumir la responsabilidad en diversas situaciones. Le gusta tomar decisiones y confía en su propio juicio. Es tan capaz de inspirar a otros y guiarlos hacia el éxito.
+                </p>
+                <p>
+                  Arrasa con su franqueza y honestidad 
+                  Una mujer Aries tiende a ser directa y sincera. No suele rodear los problemas y puede expresar sus opiniones sin adornos. Esta sinceridad puede ser refrescante, pero también puede resultar abrumadora para aquellos que prefieren mensajes más sutiles.
+                 No tiene ni cinco de miedo de decir lo que piensa y es muy capaz expresar sus opiniones con franqueza. A veces, esta honestidad puede parecer demasiado intensa para los demás, pero una Aries prefiere la transparencia y la autenticidad. Dado que siempre es sincera con su comunicación y sentimientos, espera lo mismo de su gente y no le va bien en el juego de persecución.
+
+                Si no estás en disposición de escuchar la verdad, mejor ni le preguntes a una mujer Aries.
+
+
+                </p>
+                <p>
+                    Es cierto, es impaciente y competitiva 
+                    La mujer Aries puede ser impaciente y tener una fuerte necesidad de éxito. Le gusta ver resultados rápidos y puede frustrarse si las cosas no avanzan a su ritmo. Se irrita fácilmente con cualquier cosa lenta, ya sean computadoras, teléfonos, Internet o incluso personas. La impaciencia puede ser uno de los mayores desafíos para ella. Aprender a tener paciencia puede ser un aspecto importante de su crecimiento personal. Pero eso no importa, es lo que le inyecta vida.
+
+                   Además, tiene un espíritu competitivo porque ama destacar en todo lo que hace. Es que no lo puede evitar, ella adora los desafíos. Ya sea en el trabajo, el romance, los deportes o cualquier otra actividad, se esforzará por ser la mejor. Ella ve la vida como una constante carrera y se esfuerza por superarse a sí misma y a los demás. 
+                </p>
+                <p>
+                    Es perfeccionista
+                    La mujer Aries valora la organización y se siente más cómoda cuando las cosas siguen su curso previsto. Puede experimentar frustración si las circunstancias se desvían de su plan cuidadosamente trazado. 
+                    Si alguien no cumple una tarea que le ha asignado o falla a un compromiso, es posible que se sienta molesta. Sin embargo, su enfoque directo y valiente le impide guardar silencio. Ella prefiere enfrentar la situación cara a cara, porque esa es su naturaleza: audaz y no tiene miedo. Es importante destacar que sus intenciones siempre son puras, ya que su objetivo principal es ayudar a las personas a evitar errores y alcanzar su máximo potencial.
+
+                    Ella no quiere ofender, solo desea sacar lo mejor de los demás.    
+                   
+                </p>
+                <p>
+                    Posee una sensibilidad oculta
+                   Detrás de su aparente fortaleza y valentía, la mujer Aries guarda una sensibilidad oculta que puede sorprender a quienes la rodean. A pesar de su actitud segura y decidida, las críticas o el rechazo pueden afectarla profundamente. A veces, las palabras ofensivas o los gestos de desaprobación pueden herirla más de lo que deja entrever. 
+
+                  Esta sensibilidad oculta se debe en parte a su naturaleza apasionada y comprometida. La mujer Aries se entrega por completo en todo lo que hace, y cuando sus esfuerzos no son reconocidos o son menospreciados, puede sentirse desanimada. Incluso una pequeña crítica puede resonar en su interior y afectar su confianza en sí misma.
+                </p>
+                <p>
+                    Es conocida por su lealtad inquebrantable e instinto protector
+                    Cuando se compromete con alguien o con una causa, lo hace con todo su corazón y se convierte en una defensora feroz. Su lealtad se extiende a sus seres queridos, amigos y aquellos a quienes considera parte de su círculo íntimo.
+                    Cuando se trata de proteger a las personas que ama, la mujer Aries no escatima esfuerzos. Estará dispuesta a enfrentarse a cualquier obstáculo o peligro con tal de asegurarse de que aquellos a quienes valora estén a salvo. Su naturaleza valiente y audaz la impulsa a asumir el papel de guardiana y defensora de los que considera importantes en su vida.
+
+                    Además de su lealtad hacia las personas, la mujer Aries también puede ser protectora en cuanto a sus ideales y principios. Defiende con pasión lo que cree correcto y puede levantar su voz en contra de la injusticia. Su sentido de justicia y su deseo de proteger a los vulnerables la convierten en una aliada valiosa en la lucha por la equidad y la igualdad.
+                </p>   
+                <p>
+                     La que persevera, alcanza
+La perseverancia es una de las cualidades más destacadas de una mujer Aries. Una vez que se ha propuesto alcanzar una meta, no se detendrá ante nada hasta lograrlo. Su determinación inquebrantable y su enfoque infatigable la convierten en una fuerza imparable.
+
+Cuando la mujer Aries se enfrenta a desafíos o contratiempos, en lugar de rendirse, se fortalece. Su naturaleza impulsiva y valiente le permite enfrentar los obstáculos con coraje y buscar soluciones creativas. No se desanima fácilmente y, en lugar de eso, ve cada obstáculo como una oportunidad para crecer y aprender.
+
+Y por si fuera poco, la mujer Aries posee una gran resistencia emocional. Puede enfrentar adversidades y superar desafíos con resiliencia. Su capacidad para mantenerse firme en tiempos difíciles inspira y demuestra que no hay límites para los sueños.
+</p>
+<p>
+    Aprecia la calidad sobre cantidad
+A la mujer Aries la caracteriza su enfoque selectivo y búsqueda de la excelencia en todas las áreas de su vida. Ella valora la calidad y la autenticidad por encima de la mera cantidad o superficialidad. En lugar de buscar el camino más fácil o superficial, ella prefiere tomar decisiones sólidas y fundamentadas que lleven a resultados más significativos y satisfactorios
+
+En sus relaciones personales, la mujer Aries prefiere tener un círculo cercano de amistades íntimas y significativas en lugar de numerosas relaciones superficiales. Invierte tiempo y energía en construir conexiones genuinas y duraderas con las personas que comparten sus mismos valores.
+
+En el trabajo, puesto que la mujer Aries se esfuerza por destacar en su campo y busca oportunidades que le permitan ejercer su liderazgo y habilidades, prefiere enfocarse en proyectos de calidad, donde pueda dejar una marca significativa, en lugar de dispersarse en múltiples tareas de menor importancia.
+
+Su naturaleza reflexiva y analítica le permite evaluar cuidadosamente las opciones y elegir aquellas que realmente se alineen con sus valores y metas.
+En este fascinante recorrido por los secretos de la mujer Aries, podemos afirmar que detrás de su energía ardiente y su valentía innegable, se esconde una combinación única de pasión, lealtad y perseverancia. Esta mujer excepcional nos enseña que la fortaleza no se limita a la apariencia externa, sino que también reside en la sensibilidad y en la capacidad de amar y proteger a aquellos que son importantes para ella. Al descubrir los secretos ocultos tras el fuego que arde en su corazón, nos maravillamos ante la mujer Aries y nos inspiramos en su determinación inquebrantable para conquistar el mundo. En cada paso que da, la mujer Aries encarna el espíritu indomable que todos llevamos dentro, recordándonos que cuando nos atrevemos a abrazar nuestra autenticidad y perseguir nuestras pasiones con valentía, somos capaces de lograr grandes cosas. Así que, abracemos la esencia de la mujer Aries y dejémonos llevar por su fuego arrollador mientras trascendemos los límites y conquistamos nuestros propios sueños.
+</p>
+
+                </body>
+                    </html>
+                `);
+                newWindow2.document.close(); // Cierra el flujo de escritura para que el navegador renderice el contenido
+            } else {
+                alert("Por favor selecciona una categoría.");
+            }
+        }
+    </script>
+
+</body>
+</html>
